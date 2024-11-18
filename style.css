@@ -1,0 +1,84 @@
+/* 
+Style guids
+
+## Layout
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+- White: hsl(0, 0%, 100%)
+
+- Slate 300: hsl(212, 45%, 89%)
+- Slate 500: hsl(216, 15%, 48%)
+- Slate 900: hsl(218, 44%, 22%)
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 400, 700
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  font-family: Outfit, "Sans serif";
+}
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 91em) {
+  .container {
+    margin: auto;
+    background-color: hsl(0, 0%, 100%);
+    width: 36rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 2rem 3rem 1rem rgb(0, 0, 0, 0.09);
+  }
+  .image {
+    padding: 2rem;
+  }
+  img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .content {
+    padding: 1rem 4.4rem;
+    text-align: center;
+  }
+  .title {
+    font-size: 2.4rem;
+    margin-bottom: 1.4rem;
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+  }
+  .paragraph {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 3.2rem;
+    color: hsl(216, 15%, 48%);
+  }
+}
+
+@media (max-width: 24em) {
+  html {
+    font-size: 50%;
+  }
+  .container {
+    width: rem;
+  }
+}
